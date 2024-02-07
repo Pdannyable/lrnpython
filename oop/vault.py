@@ -1,4 +1,4 @@
-# Introduction to operator overloading
+"""Introduction to operator overloading"""
 
 
 class Vault:
@@ -10,7 +10,8 @@ class Vault:
     def __str__(self):
         return f"{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} Knuts"
 
-# the operator __add__ is defined which enables line 28 to perform addition
+"""the operator __add__ is defined which enables line 28 to perform addition"""
+
     def __add__(self, other):
         galleons = self.galleons + other.galleons
         sickles = self.sickles + other.sickles
